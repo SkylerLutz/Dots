@@ -21,6 +21,8 @@
 		D466B4A61863A07D00356411 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D466B4881863A07D00356411 /* UIKit.framework */; };
 		D466B4AE1863A07D00356411 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D466B4AC1863A07D00356411 /* InfoPlist.strings */; };
 		D466B4B01863A07D00356411 /* DotsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D466B4AF1863A07D00356411 /* DotsTests.m */; };
+		D466B4BE1863A97C00356411 /* SPLGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = D466B4BD1863A97C00356411 /* SPLGameView.m */; };
+		D466B4C11863A9B000356411 /* SPLDot.m in Sources */ = {isa = PBXBuildFile; fileRef = D466B4C01863A9B000356411 /* SPLDot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		D466B4AB1863A07D00356411 /* DotsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DotsTests-Info.plist"; sourceTree = "<group>"; };
 		D466B4AD1863A07D00356411 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D466B4AF1863A07D00356411 /* DotsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DotsTests.m; sourceTree = "<group>"; };
+		D466B4BC1863A97C00356411 /* SPLGameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLGameView.h; sourceTree = "<group>"; };
+		D466B4BD1863A97C00356411 /* SPLGameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPLGameView.m; sourceTree = "<group>"; };
+		D466B4BF1863A9B000356411 /* SPLDot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLDot.h; sourceTree = "<group>"; };
+		D466B4C01863A9B000356411 /* SPLDot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPLDot.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,10 @@
 				D466B4961863A07D00356411 /* Main.storyboard */,
 				D466B4991863A07D00356411 /* SPLViewController.h */,
 				D466B49A1863A07D00356411 /* SPLViewController.m */,
+				D466B4BC1863A97C00356411 /* SPLGameView.h */,
+				D466B4BD1863A97C00356411 /* SPLGameView.m */,
+				D466B4BF1863A9B000356411 /* SPLDot.h */,
+				D466B4C01863A9B000356411 /* SPLDot.m */,
 				D466B49C1863A07D00356411 /* Images.xcassets */,
 				D466B48B1863A07D00356411 /* Supporting Files */,
 			);
@@ -250,6 +260,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D466B4C11863A9B000356411 /* SPLDot.m in Sources */,
+				D466B4BE1863A97C00356411 /* SPLGameView.m in Sources */,
 				D466B4951863A07D00356411 /* SPLAppDelegate.m in Sources */,
 				D466B4911863A07D00356411 /* main.m in Sources */,
 				D466B49B1863A07D00356411 /* SPLViewController.m in Sources */,

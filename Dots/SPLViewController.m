@@ -7,23 +7,37 @@
 //
 
 #import "SPLViewController.h"
+#import "SPLGameView.h"
+#import "SPLDot.h"
 
-@interface SPLViewController ()
+@interface SPLViewController () <SPLGameViewDelegate>
+
+@property (weak, nonatomic) IBOutlet SPLGameView *gameView;
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+
 
 @end
 
 @implementation SPLViewController
 
+
+#pragma mark ViewController Lifecycle
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.gameView.delegate = self;
+    [self start:nil];
+}
+#pragma mark Game
+
+- (IBAction)start:(id)sender {
+    [self.gameView startGame];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark SPLGameViewDelegate
+- (void)didDelete:(NSArray *)dots cycle:(BOOL)cycle {
+    self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.gameView.score];
+    [self.scoreLabel sizeToFit];
+    
 }
-
 @end
